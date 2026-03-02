@@ -8,7 +8,7 @@
 <body>
     <div layout:fragment="content">
         <h1 class="mb-4">Thêm sách mới</h1>
-        <form th:action="@{/books/add}" th:object="${book}" method="post" class="card p-4 shadow-sm" style="max-width: 28rem;">
+        <form th:action="@{/add}" th:object="${book}" method="post" class="card p-4 shadow-sm" style="max-width: 28rem;">
             <div class="mb-3">
                 <label for="title" class="form-label">Tiêu đề</label>
                 <input type="text" id="title" th:field="*{title}" class="form-control" required
